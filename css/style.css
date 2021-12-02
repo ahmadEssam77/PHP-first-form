@@ -1,0 +1,110 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Estonia&family=Open+Sans:wght@500&family=Poppins:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Estonia', cursive;
+    font-size: 50px;
+}
+
+.form-wrapper {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.my-input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px solid black;
+    width: 60%;
+    margin-bottom: 25px; 
+}
+
+.my-input:focus {
+    outline: none;
+}
+
+textarea {
+    width: 60%;
+    margin-bottom: 25px;
+}
+
+.name-the-file {
+    width: 20%;
+    margin-right: 20px;
+}
+
+
+
+.gender {
+    margin-top: 15px;
+}
+
+.my-submit:hover {
+    background-color: #333;
+    color: #fff;
+    border-color: #ccc;
+}
+
+.my-radio {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.my-submit {
+    background-color: transparent;
+    border: 1px solid orange;
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: fit-content;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: background-color 0.7s, color 0.7s, border-color 0.7s;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.date {
+    position: absolute;
+    right: 5%;
+    border: 1px solid #333;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 15px;
+}
+
+
+/* Media Query */
+@media screen and (max-width: 600px) {
+
+    .form-wrapper {
+        width: 75%;
+    }
+
+    .my-input, textarea {
+        width: 100%;
+    }
+
+    .date {
+        bottom: 9%;
+        left: 5%;
+        right: auto;
+    }
+}
